@@ -1,0 +1,26 @@
+{
+    "include": [
+        "."
+    ],
+    "exclude": [
+        "**/node_modules",
+        "**/__pycache__",
+        "**/migrations",
+        "**/venv",
+        "**/.venv"
+    ],
+    "ignore": [],
+    "defineConstant": {
+        "DEBUG": true
+    },
+    "typeCheckingMode": "off",
+    "useLibraryCodeForTypes": true,
+    "autoImportCompletions": true,
+    "autoSearchPaths": true,
+    "extraPaths": [],
+    "stubPath": "./typings",
+    "venvPath": ".",
+    "venv": "django",
+    "pythonVersion": "3.8",
+    "pythonPlatform": "Darwin"
+} 
