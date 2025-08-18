@@ -75,6 +75,8 @@ WSGI_APPLICATION = "oneProject.wsgi.application"
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
+
+# 定义数据库配置，使用sqlite3数据库
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.sqlite3",
