@@ -13,11 +13,13 @@
     "defineConstant": {
         "DEBUG": true
     },
-    "typeCheckingMode": "off",
+    "typeCheckingMode": "basic",
     "useLibraryCodeForTypes": true,
     "autoImportCompletions": true,
     "autoSearchPaths": true,
     "extraPaths": [],
+    "stubPath": "./typings",
+    "reportMissingTypeStubs": false,
     "stubPath": "./typings",
     "venvPath": ".",
     "venv": "django",

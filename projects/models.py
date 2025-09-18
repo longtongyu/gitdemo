@@ -16,9 +16,9 @@ class Peple(models.Model):
 
 
 
-class projects(models.Model):
-    # 主键
-    id  = models.IntegerField(primary_key=True,verbose_name="主键",help_text="项目id为主键")
+class Projects(models.Model):
+    # 主键 - 使用 AutoField 让 Django 自动管理
+    id = models.AutoField(primary_key=True, verbose_name="主键", help_text="项目id为主键")
     name = models.CharField(max_length=50,verbose_name="项目名称",help_text="项目名称",unique=True)
     leader = models.CharField(max_length=50,verbose_name="项目负责人",help_text="项目负责人",null=True)
     is_execute = models.BooleanField(verbose_name='是否启动项目',help_text="1:启动 2:暂停",default=True)
@@ -32,4 +32,4 @@ class projects(models.Model):
         db_table = 'tb_project'
         verbose_name = "项目表"
         ordering = ['id']
-        
+
